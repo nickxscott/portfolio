@@ -14,35 +14,57 @@
       </ul>   
     </header><br><br>  
     <h1>projects</h1>
-    <p class='projects'>
+    <p class='projects_head'>
         The following are projects that I have completed or am currently working on. Some of the code for the projects can be found in public GitHub repositories, while some is private. Links to the repositories are provided where available.
     </p><br>
-    <h2>Summary AI</h2>
+    <h2>>>Summary AI</h2>
     <div class='project-pic'>
       <a href="https://summaryai-public.onrender.com" target="_blank"><img src="images/summaryai.png" alt="Summary AI App"></a>
     </div>
     <p class='projects'>
-        Inspired by the recent advancements in Natural Language Processing, I began developing an app that could generate concise summaries of textual documents of various size. The app uses LangChain, a new python library that allows developers to interact with LLMs in various ways. A interesting feature of LangChain is the ability to perform question-answering over documents, a feature which Summary AI relies on heavily. LangChain stores the uploaded documents in a vector database, which a user can then "query" with a prompt. LangChain finds the relevant information in the vector database, then sends the prompt along with the relevant info to an LLM of the developers choosing. In this case, I am using OpenAI's API to interact with Chat-GPT. When the user clicks "summarize", the app generates the prompt "summarize this document in under 100 words". <br>
+        This app uses LangChain to perform question-answering over documents. The project began as a way to summarize documents, but later upgrades included an option for providing a custom prompt. It works by storing the uploaded documents in a vector database, which a user can then "query" with a prompt. LangChain finds the relevant information in the vector database, then sends the prompt along with the relevant info to an LLM of the developers choosing. In this case, I am using OpenAI's API to interact with Chat-GPT. When the user clicks "submit", the app inserts the user-provided prompt into a prompt template to send to the OpenAI API. If no prompt is provided, the prompt "summarize this document in under 100 words" is automatically sent. <br>
         This app is still in development, and the code is currently in a private repo.<br><br> 
-        Languages: Python, HTML, CSS<br>
-        Framework: Flask<br>
         Link: <a class='project_link' href="https://summaryai-public.onrender.com" target="_blank">https://summaryai-public.onrender.com</a>
     </p>
-    <h2>Suggest a Major</h2>
+    <h2>>>Suggest a Major</h2>
+    <div class='project-pic'>
+      <a href="https://suggest-a-major.onrender.com" target="_blank"><img src="images/suggest.png" alt="Suggest A Major App"></a>
+    </div>
     <p class='projects'>
-        The following are projects that I have completed or am currently working on. Some of the code for the projects can be found in public GitHub repositories, while some is private. Links to the repositories are provided where available.
-    </p>
-    <h2>Retention What-If</h2>
     <p class='projects'>
-        The following are projects that I have completed or am currently working on. Some of the code for the projects can be found in public GitHub repositories, while some is private. Links to the repositories are provided where available.
+        This app is an attempt to solve a problem that many colleges and universities face - students with undecided majors. Undecided students tend to retain at significantly lower rates than their "decided" counterparts, so pushing students toward a suitable major as early as possible is in both the student and the institution's best interest. The app was developed for St. John's University prior to the Fall 2023 semester. There is both a public-facing, and internal version. The public version (link below) is available to any prospective student, whereas the private version requires a valid student ID number. The private version makes a call to a Snowflake database with the student's ID, and returns responses for many of the questions in the public version of the app. Therefore, the questionnaire is significantly shorter in the private version. <br>
+        The model that provides the suggestions is a Random Forest classifier, and the training data was pulled from both the St. John's student database as well as freshman survey's from prior years. The code for the project is currently in a private repo.<br><br> 
+        Link: <a class='project_link' href="https://suggest-a-major.onrender.com" target="_blank">https://suggest-a-major.onrender.com</a>
     </p>
-    <h2>Whats My Race Pace</h2>
+    <h2>>>Retention What-If</h2>
+    <div class='project-pic'>
+      <a href="https://retentionwhatifapp.onrender.com" target="_blank"><img src="images/whatif.png" alt="Retention What-If App"></a>
+    </div>
     <p class='projects'>
-        The following are projects that I have completed or am currently working on. Some of the code for the projects can be found in public GitHub repositories, while some is private. Links to the repositories are provided where available.
+        "Retention" in Higher Education is defined as the precentage of first-time freshman in a given fall term who return the following fall to begin their sophomore year. As enrollment rates decline, the ability to retain students year over year has become increasingly important for institutions. In the Fall of 2022 and Spring of 2023, I began developing a model that could predict a student's probability of retaining. Based on the student's predicted retention probabilty, they are assigned to one of three "retention classes": high risk (red), low risk (green), or moderate risk (yellow). The results of the model are being used to identify at-risk students prior to their arrival, which allows for early intervention. To get stakeholders engaged, I wanted to develop an app that could demonstrate the "return on investment" in our high-risk students. The app allows users to create "what-if" scenarios by changing the retention rates for each retention class, then seeing what the effect would have been on the overall retention rate for that year. For instance, a stakeholder can ask "what would have happened if we had intervened and increased retention by 2% in the high-risk group, and 3% in the moderate risk group?". The app then calculates a weighted average with the new retention rate and provides it, along with an updated chart reflecting the "what-if" retention rates for each class.<br>
+        In addition to the what-if scenarios, I also included an interactive chart (built with Plotly) to show the results of a separate, but related, analysis I did on course combinations. The chart shows the average retention rate and GPA of students that took various 3-course combinations. The goal was to provide optimal scheduling options for students who would be at the highest risk for retention. <br>
+        This web page was presented at a Dean's Council meeting to introduce the Office of Data Science and Analytics to the instituion.<br><br> 
+        Link: <a class='project_link' href="https://retentionwhatifapp.onrender.com" target="_blank">https://retentionwhatifapp.onrender.com</a>
     </p>
-    <h2>Get Binary</h2>
+    <h2>>>Whats My Race Pace</h2>
+    <div class='project-pic'>
+      <a href="https://whats-my-race-pace.onrender.com/" target="_blank"><img src="images/racepace.png" alt="What's My Race Pace App"></a>
+    </div>
     <p class='projects'>
-        The following are projects that I have completed or am currently working on. Some of the code for the projects can be found in public GitHub repositories, while some is private. Links to the repositories are provided where available.
+        This is the first app I ever built. Many of apps/calculators of this kind exist, but I wanted to see if I could write one myself from scratch. I still use this on a regular basis as I'm training for races and changing my goals throughout the training cycle. Sometimes the simplest tools are the most useful.<br><br>
+        Link: <a class='project_link' href="https://whats-my-race-pace.onrender.com" target="_blank">https://whats-my-race-pace.onrender.com</a><br>
+        Github: <a class='project_link' href="https://github.com/nickxscott/WhatsMyRacePace" target="_blank">https://github.com/nickxscott/WhatsMyRacePace</a>
     </p>
+    <h2>>>Get Binary</h2>
+    <div class='project-pic'>
+      <a href="https://get-binary.onrender.com" target="_blank"><img src="images/binary.png" alt="Get Binary App"></a>
+    </div>
+    <p class='projects'>
+        After reading Charles Petzold's Code, I became temporarily fascinated with varying-base numbering systems. As an exercise, I wanted to see if I could write a program from scratch that would convert base-10 integers into base-2 numbers. This was the second app I created, and the official start of my obsession with computing, programming, and problem solving. The design of the app was also inspired by Code, and is an homage to the pioneers of the Turing machine. 
+        <br><br>
+        Link: <a class='project_link' href="https://get-binary.onrender.com" target="_blank">https://get-binary.onrender.com</a><br>
+        Github: <a class='project_link' href=https://github.com/nickxscott/GetBinary" target="_blank">https://github.com/nickxscott/GetBinary</a>
+    </p>
+    <br><br>
 </body>
 </html>

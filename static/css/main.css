@@ -26,7 +26,12 @@ h1 {
 	color: white;
 	font-family:  Courier;
 	font-size:  4em;
-	margin: 2%;
+	margin-left: 2%;
+	margin-bottom: 0;
+}
+.bio-pic {
+	margin-left: 2%;
+	border-radius: 50%;
 }
 p {
 	color: white;
@@ -34,10 +39,21 @@ p {
 	}
 .bio {
 	margin: 2%;
+	width: 60%;
+}
+.projects_head {
+	margin-left: 2%;
+	width: 40%;
+	font-size: 1.5em;
 }
 .projects {
 	margin-left: 2%;
 	width: 40%;
+}
+h3 {
+	color: white;
+	font-family:  Courier;
+	margin-left:2%;
 }
 
 h2 {
@@ -56,13 +72,14 @@ h2 {
 	color: white;
 }
 .project-pic {
-	width:40%;
+	width:50%;
 	margin-left: 2%;
 }
 img {
   border-radius: 8px;
   max-height:100%; 
   max-width:100%;
+  border: solid 2px white;
 }
 .pdf { 
 	margin: auto;
