@@ -84,11 +84,13 @@ img {
 .pdf { 
 	width: auto;
   	height: 800px;
-	text-align: center;
+  	text-align: center;
 }
 .resume { 
-	width: 75%;
+	width: 50%;
 	height: 100%;
+	border: solid 2px white;
+
 }
 /*.auth {border:none;}
 
