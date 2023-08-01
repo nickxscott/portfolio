@@ -39,16 +39,16 @@ p {
 	}
 .bio {
 	margin: 2%;
-	width: 60%;
+	width: 75%;
 }
 .projects_head {
 	margin-left: 2%;
-	width: 50%;
+	width: 75%;
 	font-size: 1.5em;
 }
 .projects {
 	margin-left: 2%;
-	width: 40%;
+	width: 60%;
 }
 h3 {
 	color: white;
@@ -82,12 +82,12 @@ img {
   border: solid 2px white;
 }
 .pdf { 
-	margin: auto;
-	width: 90%;
-	height: 800px;
+	width: auto;
+  	height: 800px;
+	text-align: center;
 }
 .resume { 
-	width: 100%;
+	width: 75%;
 	height: 100%;
 }
 /*.auth {border:none;}
