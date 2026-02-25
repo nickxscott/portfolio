@@ -3,3 +3,37 @@ html *
    font-family: Courier !important;
 }
 
+
+.zoom-img {
+  height: auto;
+  transition: transform 0.5s ease; /* Smooth animation over 0.5 seconds */
+  display: inline;
+}
+
+.zoom-img:hover {
+  transform: scale(1.2); /* Zooms the image to 1.2 times its size on hover */
+}
+
+/* Ensure the parent nav-item is relatively positioned */
+.navbar-nav .nav-item {
+  position: relative;
+}
+
+/* Style the pseudo-element which will be the underline */
+.navbar-nav .nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Position at the bottom of the link area */
+  left: 0;
+  right: 0;
+  margin: 0 auto; /* Center the underline */
+  height: 2px; /* Underline thickness */
+  background-color: grey; /* Underline color */
+  width: 0%; /* Initially hide the underline */
+  transition: width 0.4s ease; /* Smooth transition effect */
+}
+
+/* On hover, expand the width of the pseudo-element */
+.navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
