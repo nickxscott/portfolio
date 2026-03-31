@@ -14,6 +14,12 @@ html *
   transform: scale(1.2); /* Zooms the image to 1.2 times its size on hover */
 }
 
+.grayscale-img {
+    filter: grayscale(100%);
+    /* For older browser compatibility */
+    -webkit-filter: grayscale(100%);
+}
+
 /* Ensure the parent nav-item is relatively positioned */
 .navbar-nav .nav-item {
   position: relative;
