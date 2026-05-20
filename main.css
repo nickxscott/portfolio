@@ -14,6 +14,11 @@ html *
   transform: scale(1.2); /* Zooms the image to 1.2 times its size on hover */
 }
 
+/* Specifically disable the zoom if the image is inside a Bootstrap modal */
+.modal .zoom-img:hover {
+  transform: none !important;
+}
+
 .grayscale-img {
     filter: grayscale(100%);
     /* For older browser compatibility */
