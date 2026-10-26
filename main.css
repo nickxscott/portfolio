@@ -48,3 +48,10 @@ html *
 .navbar-nav .nav-item:hover::after {
   width: 100%;
 }
+
+.presentation-container {
+    width: 100%;             /* Fills the horizontal space of its own parent */
+    max-width: 800px;        /* Prevents it from getting too massive on wide screens */
+    aspect-ratio: 16 / 9;    /* Maintains the perfect Google Slides screen ratio */
+    box-sizing: border-box;  /* Ensures borders/padding don't disrupt dimensions */
+  }
